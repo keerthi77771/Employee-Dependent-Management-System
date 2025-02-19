@@ -12,7 +12,6 @@ The **Employee & Dependent Management System** is a web-based application that a
 ✅ **Error Handling** - Robust validation at both application and database levels.  
 ✅ **Web-Based UI** - Works via a **browser using PHP & MySQL**.  
 
----
 
 ## **🛠 Tech Stack**
 | Component    | Technology Used |
@@ -22,7 +21,6 @@ The **Employee & Dependent Management System** is a web-based application that a
 | **Database** | MySQL |
 | **Server**   | WAMP/LAMP (Windows, Apache, MySQL, PHP) |
 
----
 
 ## **📂 Project Directory Structure**
 ```
@@ -48,7 +46,6 @@ Employee-Dependent-Management-System/
 │── README.md                    # Documentation
 ```
 
----
 
 ## **⚙️ Installation & Setup**
 ### **1️⃣ Clone the Repository**
@@ -81,7 +78,6 @@ cd Employee-Dependent-Management-System
   http://localhost/Employee-Dependent-Management-System/
   ```
 
----
 
 ## **🛡 Data Validation & Security**
 ### ✅ **Application-Level Validation**
@@ -93,22 +89,20 @@ cd Employee-Dependent-Management-System
 - **Dependent (SSN + Name) is a composite key**.
 - **Foreign Key Constraints**: Prevent orphaned records.
 
----
 
 ## **📸 Screenshots**
 🔹 **Homepage**
-![Homepage](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%201.png)
+![Homepage](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%204.png)
 
 🔹 **Employee List**
-![Employee List](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%202.png)
+![Employee List](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%203.png)
 
 🔹 **Add Employee Form**
-![Add Employee](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%203.png)
+![Add Employee](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%201.png)
 
-🔹 **Edit Employee**
-![Edit Employee](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%204.png)
+🔹 **Dependent List**
+![Edit Employee](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%202.png)
 
----
 
 ## **🏆 Why Use This System?**
 🚀 **Easy Employee & Dependent Tracking** - Simple UI for adding & managing records.  
@@ -116,7 +110,6 @@ cd Employee-Dependent-Management-System
 🔐 **Robust Validation** - Ensures data integrity with **client-side & database validation**.  
 🌐 **Web-Based Access** - Works in any modern browser via **WAMP/LAMP server**.  
 
----
 
 ## **📝 Contributing**
 Want to improve this project? Follow these steps:
