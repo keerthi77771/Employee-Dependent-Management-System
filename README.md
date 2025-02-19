@@ -1,28 +1,56 @@
-## 📌 **Employee & Dependent Management System**
-![Project Screenshot](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%201.png)
 
-### **🔹 Overview**
-The **Employee & Dependent Management System** is a **web-based application** that allows organizations to manage employees and their dependents efficiently. It supports **CRUD operations (Create, Read, Update, Delete)** while ensuring **referential integrity** using a **MySQL database**.
+# **Employee & Dependent Management System**
+![Project Screenshot](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%204.png)
 
-## 📜 **Features**
-✅ **Employee Management** - Add, update, delete, and view employee records.  
-✅ **Dependent Management** - Manage dependents tied to employee records with a **composite primary key**.  
-✅ **Referential Integrity** - Uses `ON DELETE CASCADE` to maintain data consistency.  
-✅ **Database Validation** - Ensures no duplicate SSNs, missing fields, or bad inputs.  
-✅ **Error Handling** - Robust form validations at both **application and database levels**.  
-✅ **Web-Based** - Accessible via a browser using a **WAMP/LAMP stack**.  
+## **📌 Overview**
+The **Employee & Dependent Management System** is a web-based application that allows organizations to efficiently manage employees and their dependents. It supports **CRUD operations (Create, Read, Update, Delete)** while ensuring **referential integrity** using a **MySQL database**.
 
+### **🔹 Key Features**
+✅ **Employee Management** - Add, edit, delete, and view employees.  
+✅ **Dependent Management** - Manage dependents associated with employees.  
+✅ **Referential Integrity** - Uses `ON DELETE CASCADE` to maintain consistency.  
+✅ **Error Handling** - Robust validation at both application and database levels.  
+✅ **Web-Based UI** - Works via a **browser using PHP & MySQL**.  
 
-## 🛠 **Tech Stack**
-| Layer         | Technology Used |
-|--------------|----------------|
+---
+
+## **🛠 Tech Stack**
+| Component    | Technology Used |
+|-------------|----------------|
 | **Frontend** | HTML, CSS, JavaScript |
 | **Backend**  | PHP |
 | **Database** | MySQL |
-| **Development Environment** | WAMP (Windows, Apache, MySQL, PHP) |
+| **Server**   | WAMP/LAMP (Windows, Apache, MySQL, PHP) |
 
+---
 
-## ⚙️ **Installation & Setup**
+## **📂 Project Directory Structure**
+```
+Employee-Dependent-Management-System/
+│── Images/                     # Project Screenshots
+│   ├── EMS 1.png
+│   ├── EMS 2.png
+│   ├── EMS 3.png
+│   ├── EMS 4.png
+│── css/                         # Stylesheets
+│   ├── style.css
+│── includes/                    # Database Config & Includes
+│   ├── db_connection.php
+│── add_dependent.php            # Add dependent functionality
+│── add_employee.php             # Add employee functionality
+│── delete_dependent.php         # Delete dependent functionality
+│── delete_employee.php          # Delete employee functionality
+│── edit_dependent.php           # Edit dependent details
+│── edit_employee.php            # Edit employee details
+│── index.php                    # Homepage
+│── view_dependents.php          # View all dependents
+│── view_employees.php           # View all employees
+│── README.md                    # Documentation
+```
+
+---
+
+## **⚙️ Installation & Setup**
 ### **1️⃣ Clone the Repository**
 ```sh
 git clone https://github.com/keerthi77771/Employee-Dependent-Management-System.git
@@ -36,7 +64,7 @@ cd Employee-Dependent-Management-System
    - Go to **Import** → Upload `database.sql` → Click **Go**.
 
 ### **3️⃣ Configure Database Connection**
-1. Open `config.php` in the project folder.
+1. Open `includes/db_connection.php`.
 2. Set your database credentials:
    ```php
    $servername = "localhost";
@@ -53,30 +81,21 @@ cd Employee-Dependent-Management-System
   http://localhost/Employee-Dependent-Management-System/
   ```
 
-## 📂 **Project Structure**
-```
-Employee-Dependent-Management-System/
-│── Images/                     # Project Screenshots
-│── database.sql                 # Database Schema
-│── index.php                    # Homepage
-│── config.php                    # Database Configuration
-│── employees.php                 # Employee Management
-│── dependents.php                # Dependent Management
-│── assets/                       # CSS, JS files
-└── README.md                     # Documentation
-```
+---
 
-## 🛡 **Data Validation & Security**
-### **✅ Application-Level Validation**
-- HTML form attributes (`required`, `pattern`) ensure correct input.
-- PHP validation checks SSN format, uniqueness, and missing fields.
+## **🛡 Data Validation & Security**
+### ✅ **Application-Level Validation**
+- **Frontend Validation**: Uses HTML form attributes (`required`, `pattern`) to prevent bad input.
+- **Backend Validation**: PHP ensures correct **SSN format**, **uniqueness**, and **non-empty fields**.
 
-### **✅ Database-Level Validation**
-- **SSN** is a **primary key** (`UNIQUE` constraint).
-- **Dependent (SSN + Name)** is a **composite primary key**.
-- **Foreign Key Constraints** prevent orphaned records.
+### ✅ **Database-Level Validation**
+- **SSN is a primary key** (`UNIQUE` constraint).
+- **Dependent (SSN + Name) is a composite key**.
+- **Foreign Key Constraints**: Prevent orphaned records.
 
-## 📸 **Screenshots**
+---
+
+## **📸 Screenshots**
 🔹 **Homepage**
 ![Homepage](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%201.png)
 
@@ -86,18 +105,20 @@ Employee-Dependent-Management-System/
 🔹 **Add Employee Form**
 ![Add Employee](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%203.png)
 
-🔹 **Add Employee Form**
-![Add Employee](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%204.png)
+🔹 **Edit Employee**
+![Edit Employee](https://github.com/keerthi77771/Employee-Dependent-Management-System/blob/main/Images/EMS%204.png)
 
+---
 
-## 🏆 **Why Use This System?**
+## **🏆 Why Use This System?**
 🚀 **Easy Employee & Dependent Tracking** - Simple UI for adding & managing records.  
 🔄 **Automatic Referential Integrity** - Prevents orphan records via **ON DELETE CASCADE**.  
 🔐 **Robust Validation** - Ensures data integrity with **client-side & database validation**.  
 🌐 **Web-Based Access** - Works in any modern browser via **WAMP/LAMP server**.  
 
+---
 
-## 📝 **Contributing**
+## **📝 Contributing**
 Want to improve this project? Follow these steps:
 
 1. **Fork the Repository**
@@ -107,8 +128,5 @@ Want to improve this project? Follow these steps:
 5. **Submit a Pull Request**
 
 
-## 🤝 **Contact & Support**
-For issues or feature requests, open a [GitHub Issue](https://github.com/keerthi77771/Employee-Dependent-Management-System/issues).  
-
-### 🚀 **Star ⭐ this repository if you found it useful!**  
-Let me know if you need any modifications! 😊
+### ⭐ **Star this repository if you found it useful!**  
+Let me know if you need any modifications! 😊🚀
