@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #343a40;
+    text-align: center;
+}
+
+a {
+    color: #495057; /* Medium gray for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff; /* White background for table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #6c757d; /* Subtle gray for header */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f3f5; /* Light gray for alternating rows */
+}
+
+/* Form Styling */
+form {
+    background-color: #ffffff; /* White background for form */
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #495057; /* Medium gray for labels */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 4px;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Subtle blue for buttons */
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Link Button Styling */
+.link-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #6c757d; /* Subtle gray for link buttons */
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #495057; /* Darker gray on hover */
+}
+
+/* Center Content */
+.center {
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}
+.button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+}
+
+.edit-button {
+    background-color: #28a745; /* Green */
+}
+
+.delete-button {
+    background-color: #dc3545; /* Red */
+}
+
+.home-button {
+    background-color: #007bff; /* Blue */
+    color: white;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.add-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.table-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;
+    margin-top: 15px;
+}
